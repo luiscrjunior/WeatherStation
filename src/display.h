@@ -1,5 +1,4 @@
 #include "epd2in66b.h"
-#include "epdpaint.h"
 #include <Adafruit_GFX.h>
 #include <Adafruit_I2CDevice.h>
 
