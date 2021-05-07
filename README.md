@@ -2,7 +2,7 @@
 
 ![WeatherStation_Thumb](https://user-images.githubusercontent.com/13292515/117494807-3a45e800-af4b-11eb-9557-6a5b6ca96655.jpg)
 
-Current ESP32 code from the Weather Station that I made that fetches through WiFi data from openweathermap API and displays some weather info (temperature, weather description, icon and UV data) for today and next day.
+Current ESP32 code from the Weather Station that I made that fetches, through WiFi, data from openweathermap API and displays some weather info (temperature, weather description, icon and UV data) for today and next day.
 
 Used ESP32 board with Waveshare 2.66inch (three colors) E-paper, that works with 18650 battery.
 
