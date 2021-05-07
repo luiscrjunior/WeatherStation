@@ -5,7 +5,7 @@ void Display::init(void)
 {
   if (epd.Init() != 0)
   {
-    Serial.println("[ERROR] e-Paper init failed...");
+    Serial.println("[WeatherStation] Error initializing EPD.");
     return;
   }
 }
