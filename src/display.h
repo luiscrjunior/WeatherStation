@@ -19,6 +19,10 @@ public:
   void display(void);
   void sleep(void);
 
+  // drawPixel method adapted from GxEPD Project:
+  // Author: Jean-Marc Zingg
+  // Library: https://github.com/ZinggJM/GxEPD2
+  // File: src/GxEPD2_3C.h
   void drawPixel(int16_t x, int16_t y, uint16_t color)
   {
     if ((x < 0) || (x >= width()) || (y < 0) || (y >= height()))
@@ -52,6 +56,10 @@ public:
       red_buffer[i] = (red_buffer[i] & (0xFF ^ (1 << (7 - x % 8))));
   }
 
+  // fillScreen method copied from GxEPD Project:
+  // Author: Jean-Marc Zingg
+  // Library: https://github.com/ZinggJM/GxEPD2
+  // File: src/GxEPD2_3C.h
   void fillScreen(uint16_t color)
   {
     uint8_t black = 0xFF;
@@ -69,6 +77,10 @@ public:
     }
   }
 
+  // _swap_ method copied from GxEPD Project:
+  // Author: Jean-Marc Zingg
+  // Library: https://github.com/ZinggJM/GxEPD2
+  // File: src/GxEPD2_3C.h
   template <typename T>
   static inline void
   _swap_(T &a, T &b)
